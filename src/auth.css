@@ -1,0 +1,115 @@
+/* src/auth.css */
+.auth-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+    max-width: 380px;
+    padding: 3rem;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 0.6s ease-in-out; /* Slightly slower fade-in effect */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.auth-container h2 {
+    text-align: center;
+    color: #2b2d42; /* Darker shade for the title */
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Increased gap for better spacing */
+}
+
+.auth-input {
+    padding: 1rem;
+    border: 1px solid #d1d5db; /* Lighter border color */
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    background-color: #f7fafc; /* Soft background */
+}
+
+.auth-input:focus {
+    outline: none;
+    border-color: #4c91e1; /* Light blue border */
+    box-shadow: 0 0 8px rgba(76, 145, 225, 0.4); /* Subtle blue glow on focus */
+    background-color: #e2e8f0; /* Slightly darker background on focus */
+}
+
+.auth-button {
+    background-color: #4c91e1; /* Soft blue color */
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px; /* Slightly more rounded corners */
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 10px rgba(76, 145, 225, 0.2); /* Soft shadow */
+}
+
+.auth-button:hover {
+    background-color: #3971c3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.auth-button:active {
+    background-color: #346aa9; /* Even darker blue on click */
+    transform: translateY(0); /* Reset lift on click */
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.auth-footer a {
+    color: #4c91e1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .auth-container {
+        padding: 2rem;
+        max-width: 320px;
+    }
+
+    .auth-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .auth-button {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}

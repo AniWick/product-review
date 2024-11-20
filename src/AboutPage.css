@@ -1,0 +1,15 @@
+/* src/AboutPage.css */
+.about-page {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.about-page h1 {
+    color: #17a2b8;
+}
+
+.about-page p {
+    font-size: 18px;
+    color: #333;
+}

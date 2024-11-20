@@ -1,0 +1,15 @@
+/* src/HelpPage.css */
+.help-page {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.help-page h1 {
+    color: #007bff;
+}
+
+.help-page p {
+    font-size: 18px;
+    color: #333;
+}

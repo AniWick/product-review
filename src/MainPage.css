@@ -1,0 +1,317 @@
+/* General Layout */
+/* Add a gradient background to the entire body */
+.main-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fafafa;
+    /* Lighter background for a softer feel */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #2c3e50;
+    /* Darker text color */
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: #3498db;
+    /* Bright blue for a more vibrant look */
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.nav-bar button {
+    margin: 0 15px;
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #3498db;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-bar button:hover {
+    background-color: #2980b9;
+    /* Darker blue for hover */
+    color: #fff;
+}
+
+/* Search Bar */
+.search-bar {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    padding: 14px;
+    width: 50%;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+    border-color: #3498db;
+    /* Blue border on focus */
+    outline: none;
+}
+
+/* Product Display */
+.product-box {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.product-box h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Slightly stronger shadow */
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow on hover */
+}
+
+.product-item h3 {
+    font-size: 22px;
+    color: #34495e;
+    /* Darker gray for product name */
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #7f8c8d;
+    /* Soft gray text for descriptions */
+    margin-bottom: 10px;
+}
+
+.add-review-btn {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    /* Green button for adding reviews */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-review-btn:hover {
+    background-color: #2ecc71;
+    /* Lighter green on hover */
+}
+
+/* Review Section */
+.reviews {
+    margin-top: 20px;
+}
+
+.review {
+    background-color: #ecf0f1;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.review p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #34495e;
+}
+
+.review strong {
+    color: #2ecc71;
+    /* Green color for rating text */
+}
+
+/* Review Form */
+.review-form {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #34495e;
+    text-align: center;
+}
+
+.review-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Rating Input */
+.review-form label {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.review-form input[type="number"] {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+
+.review-form input[type="number"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Comment Input */
+.review-form textarea {
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+    min-height: 150px;
+}
+
+.review-form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Submit Button */
+.review-form button {
+    padding: 14px;
+    background-color: #27ae60;
+    /* Green submit button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+    background-color: #2ecc71;
+    /* Lighter green on hover */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .review-form {
+        padding: 20px;
+        /* Slightly smaller padding on mobile */
+    }
+
+    .review-form input[type="number"] {
+        max-width: 100%; /* Make rating field full width on smaller screens */
+    }
+
+    .review-form textarea {
+        min-height: 120px; /* Smaller textarea on smaller screens */
+    }
+}
+/* View Reviews Button */
+.view-reviews-btn {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    /* Warm amber for a highlighted button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+}
+
+.view-reviews-btn:hover {
+    background-color: #e67e22;
+    /* Darker amber on hover */
+    transform: translateY(-2px);
+    /* Slight upward movement for interactivity */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+}
+
+.view-reviews-btn:active {
+    background-color: #d35400;
+    /* Even darker amber when clicked */
+    transform: translateY(0);
+    /* Reset the upward movement on click */
+}
+/* Close Button for Add Review Form */
+.close-review-btn {
+    background-color: #ff4d4d;  /* Red background */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.close-review-btn:hover {
+    background-color: #e60000;  /* Darker red on hover */
+}
+
+/* MainPage.css */
+
+/* Add a max-width to ensure the image does not overflow the container */
+.product-image {
+    width: 100%;        /* Makes the image fill the container's width */
+    height: auto;       /* Maintains aspect ratio */
+    object-fit: cover;  /* Ensures the image covers the container without distortion */
+    max-width: 100%;    /* Prevents the image from overflowing its container */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-sizing: border-box; /* Ensures padding/border does not affect size */
+}

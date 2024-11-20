@@ -1,0 +1,15 @@
+/* src/ProfilePage.css */
+.profile-page {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.profile-page h1 {
+    color: #ffc107;
+}
+
+.profile-page p {
+    font-size: 18px;
+    color: #333;
+}

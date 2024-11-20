@@ -1,0 +1,20 @@
+/* src/ContactPage.css */
+.contact-page {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.contact-page h1 {
+    color: #28a745;
+}
+
+.contact-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-page li {
+    font-size: 18px;
+    color: #333;
+}
